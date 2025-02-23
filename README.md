@@ -1,3 +1,3 @@
 # WebPony
 
-WebSite disign by BlackPony.
+WebSite design by BlackPony.
