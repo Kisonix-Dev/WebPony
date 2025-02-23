@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="image/logo.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="styles/style.css" rel="stylesheet" />
+		<title>Example site</title>
+	</head>
+	<body>
+		<header id="header">
+			<a href="index.html" class="gradient-text logo">WebPony</a>
+			<h0 class="gradient-text">Example of a website</h0>
+
+			<!--<div class="link-cards2" id="linkCards">  //Sections. 
+				<a href="#" class="active link-card card-1">
+					<h3>One</h3>
+					<p>
+						diam orci aliquet ligula, in euismod magna turpis at eros. 
+						Morbi ut euismod urna. Pellentesque ac magna nunc. Donec ut diam purus.
+					</p>
+				</a>
+				<a href="#" class="link-card card-2">
+					<h3>Two</h3>
+					<p>Integer sit amet neque ut tellus venenatis pulvinar</p>
+				</a>
+				<a href="#" class="link-card card-3">
+					<h3>Three</h3>
+					<p>Nullam a felis convallis, efficitur nisi et, imperdiet metus.</p>
+				</a>
+				<a href="#" class="link-card card-4">
+					<h3>Four</h3>
+					<p>
+						Ut gravida nec tellus sit amet egestas.
+					</p>
+				</a>
+			</div>-->
+
+			<h0 class="gradient-text"></h0>
+			<nav>
+				<a href="index.html">General</a>
+				<a class="active" href="screenshots.html">Screenshots</a>
+				<a href="projects.html">Projects</a>
+				<div class="dropdown">
+					<a class="dropbtn" onclick="toggleDropdown()"> Documentation </a>
+					<div class="dropdown-content" id="dropdownContent">
+						<a href="documentation.html">One doc</a>
+						<a href="#">Two doc</a>
+						<a href="#">Three doc</a>
+					</div>
+				</div>
+				<a href="info-author.html">About</a>
+			</nav>
+		</header>
+		<button id="scrollToTopBtn" title="Scroll up">↑</button>
+		<!--<a id="toggleCardsBtn">Show sections</a> //Sections.-->
+
+		<div class="container">
+			<main class="content">
+				<h2 class="screenshots-text">Screenshots one</h2>
+				<section class="image-grid">
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/1.jpg"
+						alt="Screenshots"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/2.jpg"
+						alt="Screenshots"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/3.jpg"
+						alt="Screenshots"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/4.jpg"
+						alt="Screenshots"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/5.jpg"
+						alt="Screenshots"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/6.jpg"
+						alt="Screenshots"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/7.jpg"
+						alt="Screenshots"
+					/>
+				</section>
+				<h2 class="screenshots-text">Screenshots two</h2>
+				<section class="image-grid">
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/1.jpg"
+						alt="Screenshots"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/2.jpg"
+						alt="Screenshots"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/3.jpg"
+						alt="Screenshots"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/4.jpg"
+						alt="Screenshots"
+					/>
+				</section>
+			</main>
+		</div>
+
+		<footer>
+			<div class="footer-container">
+				<div class="footer-info">
+					<p>:Copyright:</p>
+				</div>
+				<div class="footer-links">
+					<h4>Useful links</h4>
+					<ul>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer"
+								>TG channel</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://github.com/Kisonix-Dev"
+								target="_blank"
+								rel="noopener noreferrer"
+								>GitHub</a
+							>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer">VK video</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer"
+								>VK community</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.youtube.com/@Kisonix"
+								target="_blank"
+								rel="noopener noreferrer"
+								>YouTube channel</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<h4>Author of the site : Kisonix</h4>
+				</div>
+			</div>
+		</footer>
+
+		<div id="myModal" class="modal">
+			<span class="close" id="closeModal">&times;</span>
+			<img class="modal-content" id="img01" />
+		</div>
+		<script src="scripts/togglebtn.js"></script>
+		<script src="scripts/img.js"></script>
+		<script src="scripts/carusel.js"></script>
+		<script src="scripts/up.js"></script>
+		<script src="scripts/dropdown.js"></script>
+	</body>
+</html>

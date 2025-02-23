@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="image/logo.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="styles/style.css" rel="stylesheet" />
+		<link href="styles/posts.css" rel="stylesheet" />
+		<title>Example site</title>
+	</head>
+	<body>
+		<header id="header">
+			<a href="index.html" class="gradient-text logo">WebPony</a>
+			<h0 class="gradient-text">Example of a website</h0>
+
+			<!--<div class="link-cards2" id="linkCards">  //Sections. 
+				<a href="#" class="active link-card card-1">
+					<h3>One</h3>
+					<p>
+						diam orci aliquet ligula, in euismod magna turpis at eros. 
+						Morbi ut euismod urna. Pellentesque ac magna nunc. Donec ut diam purus.
+					</p>
+				</a>
+				<a href="#" class="link-card card-2">
+					<h3>Two</h3>
+					<p>Integer sit amet neque ut tellus venenatis pulvinar</p>
+				</a>
+				<a href="#" class="link-card card-3">
+					<h3>Three</h3>
+					<p>Nullam a felis convallis, efficitur nisi et, imperdiet metus.</p>
+				</a>
+				<a href="#" class="link-card card-4">
+					<h3>Four</h3>
+					<p>
+						Ut gravida nec tellus sit amet egestas.
+					</p>
+				</a>
+			</div>-->
+
+			<h0 class="gradient-text"></h0>
+			<nav>
+				<a class="active" href="index.html">General</a>
+				<a href="screenshots.html">Screenshots</a>
+				<a href="projects.html">Projects</a>
+				<div class="dropdown">
+					<a class="dropbtn" onclick="toggleDropdown()"> Documentation </a>
+					<div class="dropdown-content" id="dropdownContent">
+						<a href="documentation.html">One doc</a>
+						<a href="#">Two doc</a>
+						<a href="#">Three doc</a>
+					</div>
+				</div>
+				<a href="info-author.html">About</a>
+			</nav>
+		</header>
+		<button id="scrollToTopBtn" title="Scroll up">↑</button>
+		<!--<a id="toggleCardsBtn">Show sections</a> //Sections.-->
+		<div class="search-container">
+			<input type="text" id="tagSearch" placeholder="Enter tag..." />
+			<button id="searchButton">Search</button>
+		</div>
+
+		<div class="container">
+			<main class="content">
+				<div class="carousel-info-container">
+					<section class="carousel" id="carouselSection">
+						<div class="carousel-container">
+							<div class="carousel-slide">
+								<img src="image/screenshots/1.jpg" alt="Image" />
+								<img src="image/screenshots/2.jpg" alt="Image" />
+								<img src="image/screenshots/3.jpg" alt="Image" />
+							</div>
+						</div>
+						<div class="carousel-indicators">
+							<span class="indicator" onclick="showSlide(0)"></span>
+							<span class="indicator" onclick="showSlide(1)"></span>
+							<span class="indicator" onclick="showSlide(2)"></span>
+						</div>
+					</section>
+					<section class="MainText post1" id="infoSection">
+						<h2 id="header1">Information</h2>
+						<p>
+							Nunc efficitur nulla eu ligula mattis, sed tristique nisl
+							ultrices. Curabitur quis ex venenatis, cursus mi ac, malesuada
+							velit. Nullam ullamcorper consequat tellus quis vehicula. Sed sed
+							felis auctor, pulvinar sapien eu, consectetur dolor. Maecenas
+							lobortis ante vel sodales mattis. Fusce vel egestas libero.
+							Integer sit amet neque ut tellus venenatis pulvinar. Aenean
+							aliquet turpis ipsum. Etiam viverra, nisi in accumsan vulputate,
+							neque enim tempus odio, sed venenatis metus diam et purus. Sed
+							consectetur metus vitae tellus tempus, volutpat auctor massa
+							convallis. In mattis eu ipsum sit amet hendrerit. Proin felis
+							lectus, hendrerit at imperdiet vel, pellentesque at arcu. Quisque
+							eget posuere lacus, vel convallis risus. Duis libero dolor,
+							scelerisque eget massa vitae, gravida posuere mauris. Cras
+							porttitor luctus neque quis dapibus. Curabitur pharetra quam
+							risus, sit amet laoreet nisi facilisis nec.
+						</p>
+						<p>
+							Duis libero dolor, scelerisque eget massa vitae, gravida posuere
+							mauris. Cras porttitor luctus neque quis dapibus. Curabitur
+							pharetra quam risus, sit amet laoreet nisi facilisis nec.
+						</p>
+					</section>
+				</div>
+				<h2 class="PostsText" id="resultsHeader" style="display: none">
+					Search results
+				</h2>
+				<div
+					class="post-grid post-footer"
+					id="resultsContainer"
+					style="display: none"
+				></div>
+
+				<h2 class="PostsText" id="updatesHeader">Latest updates</h2>
+				<div class="post-grid post-footer" id="updatesContainer">
+					<!-- Beginning of the post -->
+					<section class="post postActive">
+						<div class="post-header">
+							<div class="post-author">
+								<img src="image/ava.jpg" alt="Аватар автора" class="avatar" />
+								<a href="info-author.html" class="author-name">Your Name</a>
+							</div>
+							<div class="post-date">30 January 2025</div>
+						</div>
+						<h2 id="postHeader1">
+							<a href="post1.html">Post one</a>
+						</h2>
+						<p>
+							Aenean aliquet turpis ipsum. Etiam viverra, nisi in accumsan
+							vulputate, neque enim tempus odio, sed venenatis metus diam et
+							purus. Sed consectetur metus vitae tellus tempus, volutpat auctor
+							massa convallis. In mattis eu ipsum sit amet hendrerit. Proin
+							felis lectus, hendrerit at imperdiet vel, pellentesque at arcu.
+						</p>
+						<div class="tags2">
+							<a class="tag tag1" href="#">Tag1</a>
+							<a class="tag tag4" href="#">Tag2</a>
+						</div>
+						<hr class="separator" />
+						<button class="btn" onclick="location.href='post1.html'">
+							Read more
+						</button>
+					</section>
+					<!-- End of post -->
+					<!-- New posts -->
+				</div>
+
+				<div class="pagination" id="pagination">
+					<button id="firstPage" onclick="goToPage(1)">«</button>
+					<button id="prevPage" onclick="changePage(-1)">« Previous</button>
+					<span id="pageInfo">Page 1 of 3</span>
+					<button id="nextPage" onclick="changePage(1)">Next »</button>
+					<button id="lastPage" onclick="goToPage(totalPages)">»</button>
+				</div>
+			</main>
+		</div>
+
+		<footer>
+			<div class="footer-container">
+				<div class="footer-info">
+					<p>:Copyright:</p>
+				</div>
+				<div class="footer-links">
+					<h4>Useful links</h4>
+					<ul>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer"
+								>TG channel</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://github.com/Kisonix-Dev"
+								target="_blank"
+								rel="noopener noreferrer"
+								>GitHub</a
+							>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer">VK video</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer"
+								>VK community</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.youtube.com/@Kisonix"
+								target="_blank"
+								rel="noopener noreferrer"
+								>YouTube channel</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<h4>Author of the site : Kisonix</h4>
+				</div>
+			</div>
+		</footer>
+		<div id="myModal" class="modal">
+			<span class="close" id="closeModal">&times;</span>
+			<img class="modal-content" id="img01" />
+		</div>
+		<script src="scripts/togglebtn.js"></script>
+		<script src="scripts/carusel.js"></script>
+		<script src="scripts/up.js"></script>
+		<script src="scripts/pagination.js"></script>
+		<script src="scripts/search.js"></script>
+		<script src="scripts/dropdown.js"></script>
+	</body>
+</html>

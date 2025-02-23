@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="image/logo.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="styles/style.css" rel="stylesheet" />
+		<title>Example site</title>
+	</head>
+	<body>
+		<header id="header">
+			<a href="index.html" class="gradient-text logo">WebPony</a>
+			<h0 class="gradient-text">Example of a website</h0>
+
+			<!--<div class="link-cards2" id="linkCards">  //Sections. 
+				<a href="#" class="active link-card card-1">
+					<h3>One</h3>
+					<p>
+						diam orci aliquet ligula, in euismod magna turpis at eros. 
+						Morbi ut euismod urna. Pellentesque ac magna nunc. Donec ut diam purus.
+					</p>
+				</a>
+				<a href="#" class="link-card card-2">
+					<h3>Two</h3>
+					<p>Integer sit amet neque ut tellus venenatis pulvinar</p>
+				</a>
+				<a href="#" class="link-card card-3">
+					<h3>Three</h3>
+					<p>Nullam a felis convallis, efficitur nisi et, imperdiet metus.</p>
+				</a>
+				<a href="#" class="link-card card-4">
+					<h3>Four</h3>
+					<p>
+						Ut gravida nec tellus sit amet egestas.
+					</p>
+				</a>
+			</div>-->
+
+			<h0 class="gradient-text"></h0>
+			<nav>
+				<a class="active" href="index.html">General</a>
+				<a href="screenshots.html">Screenshots</a>
+				<a href="projects.html">Projects</a>
+				<div class="dropdown">
+					<a class="dropbtn" onclick="toggleDropdown()"> Documentation </a>
+					<div class="dropdown-content" id="dropdownContent">
+						<a href="documentation.html">One doc</a>
+						<a href="#">Two doc</a>
+						<a href="#">Three doc</a>
+					</div>
+				</div>
+				<a href="info-author.html">About</a>
+			</nav>
+		</header>
+		<button id="scrollToTopBtn" title="Scroll up">↑</button>
+		<!--<a id="toggleCardsBtn">Show sections</a> //Sections.-->
+
+		<div class="container">
+			<main class="content">
+				<section class="post">
+					<div class="post-author">
+						<img src="image/ava.jpg" alt="Аватар автора" class="avatar" />
+						<a href="info-author.html" class="author-name">Kisonix</a>
+						<div class="post-date-detail">37 January 2025</div>
+					</div>
+
+					<hr class="separator" />
+					<div class="copy-button-container">
+						<button class="copy-button-link" onclick="copyToClipboard()">
+							Copy post link
+						</button>
+					</div>
+
+					<a class="linkPost" href="#"><h2>Main Headline</h2></a>
+
+					<img
+						class="img"
+						id="myImage"
+						src="image/logo-lime.jpg"
+						alt="Screenshots"
+						style="
+							width: 100%;
+							height: auto;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							cursor: pointer;
+						"
+					/>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta
+						rutrum orci vitae rhoncus. Phasellus vestibulum tellus sit amet
+						viverra tristique. In hac habitasse platea dictumst. Integer
+						suscipit ac velit nec ultricies. Ut erat sem, gravida eget mauris
+						in, maximus pellentesque ante. Mauris felis quam, sagittis faucibus
+						nunc non, tempor porttitor metus. Donec sagittis, ante vitae tempor
+						pharetra, lacus nulla viverra neque, et pellentesque nibh justo quis
+						libero. Integer maximus ullamcorper sapien, nec ornare leo accumsan
+						ut. Morbi ut risus turpis. Aliquam at neque erat. Cras consectetur
+						molestie mi hendrerit tincidunt. Nunc placerat tempus dolor, et
+						fringilla magna aliquet eget. Aliquam nec augue lectus. Praesent
+						tincidunt semper dolor, a suscipit nisi egestas in.
+					</p>
+
+					<!-- Embeddable player for video from VK -->
+					<section class="video-player">
+						<h2>Video demonstration:</h2>
+						<iframe
+							src="https://vkvideo.ru/video_ext.php?oid=-228873842&id=456239017&hd=2"
+							width="670"
+							height="470"
+							allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+							frameborder="0"
+							allowfullscreen
+						></iframe>
+					</section>
+
+					<h3 id="header1">
+						Headline 1<a class="symbolLink" href="#header1"> #</a>
+					</h3>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/2.jpg"
+						alt="Screenshots"
+						style="
+							width: 100%;
+							height: auto;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							cursor: pointer;
+						"
+					/>
+					<p>
+						Aenean ac mollis turpis. Aenean quis vulputate elit, vitae facilisis
+						nulla. Pellentesque nec sagittis tortor. Vivamus nunc magna,
+						eleifend at pulvinar sit amet, egestas vitae nisi. Nunc sit amet
+						finibus velit. In sit amet libero eu nisi varius sollicitudin
+						efficitur et dolor. In sagittis mollis tortor, eget efficitur turpis
+						dapibus non.
+					</p>
+
+					<h3 id="header2">
+						Headline 2<a class="symbolLink" href="#header2"> #</a>
+					</h3>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/4.jpg"
+						alt="Screenshots"
+						style="
+							width: 100%;
+							height: auto;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							cursor: pointer;
+						"
+					/>
+					<p>
+						Nulla vestibulum, ipsum at placerat viverra, nunc lorem placerat
+						leo, ut blandit nisi metus elementum diam. Integer elit purus,
+						ultricies ut nunc id, sollicitudin facilisis elit. Donec aliquet,
+						nulla sit amet laoreet egestas, sem augue vestibulum leo, et
+						facilisis quam ex ac urna. Curabitur non ante ac lacus maximus
+						feugiat volutpat id diam. Nunc ac congue eros, eget placerat neque.
+						Duis vel enim vel nulla dictum molestie ut nec purus. Pellentesque
+						vitae tellus nec purus rutrum ultrices. Mauris non vehicula mi.
+						Maecenas sollicitudin feugiat lorem suscipit iaculis. Quisque
+						maximus nisi sed ipsum convallis, non dapibus nisi consectetur.
+						Aliquam ultricies sed ante et imperdiet. Nulla consequat neque
+						auctor, dignissim nisl eu, fermentum nisl.
+					</p>
+
+					<h3 id="header3">
+						Headline 3<a class="symbolLink" href="#header3"> #</a>
+					</h3>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/1.jpg"
+						alt="Screenshots"
+						style="
+							width: 100%;
+							height: auto;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							cursor: pointer;
+						"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/2.jpg"
+						alt="Screenshots"
+						style="
+							width: 100%;
+							height: auto;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							cursor: pointer;
+						"
+					/>
+					<p>
+						Aenean fermentum velit vel pulvinar rhoncus. Mauris tempus risus a
+						est laoreet, non iaculis eros rhoncus. Fusce eu feugiat lacus. Cras
+						rutrum urna quis dui egestas dictum. Nullam in consectetur justo.
+						Fusce sollicitudin hendrerit sodales. Nunc sit amet imperdiet orci.
+						Ut eget ornare odio. Cras ut elit metus. Nunc massa orci,
+						pellentesque eget nunc quis, auctor dignissim metus. Praesent eget
+						porttitor sem. Quisque eu velit tellus.
+					</p>
+
+					<h3 id="header4">
+						Headline 4<a class="symbolLink" href="#header4"> #</a>
+					</h3>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/3.jpg"
+						alt="Screenshots"
+						style="
+							width: 100%;
+							height: auto;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							cursor: pointer;
+						"
+					/>
+					<p>
+						Donec aliquet pellentesque auctor. Maecenas sed odio eget odio
+						tincidunt sagittis eget a nibh. Quisque vel augue vulputate, dapibus
+						sapien a, venenatis metus. Proin imperdiet pharetra metus, ac
+						accumsan nulla mattis id. Quisque ligula dolor, finibus quis
+						imperdiet nec, dapibus a enim. Nunc congue semper ligula, rhoncus
+						vehicula tellus rutrum sit amet. Suspendisse ullamcorper lectus ac
+						ligula gravida viverra. Nulla ac maximus felis, eget rhoncus magna.
+						Aenean eget tellus orci. Sed vel nisi non turpis semper luctus. Cras
+						iaculis placerat neque sit amet suscipit. Ut et bibendum turpis.
+					</p>
+					<p>
+						Etiam euismod nunc a ligula facilisis accumsan. Phasellus at dui sit
+						amet augue congue malesuada. Aliquam dignissim velit magna, id
+						commodo metus iaculis sit amet. Morbi diam erat, iaculis quis
+						fermentum sit amet, aliquet auctor velit. Nullam fermentum, augue ut
+						scelerisque volutpat, neque est euismod dui, ac condimentum nulla
+						sapien vitae est. Nullam quis erat enim. Mauris arcu elit, interdum
+						non leo at, blandit fermentum mi. Vestibulum ullamcorper libero quis
+						erat egestas fermentum. Vestibulum tristique mi sed orci varius
+						volutpat. Pellentesque non justo dictum, porta sapien vitae,
+						vestibulum tortor.
+					</p>
+
+					<h3 id="header5">
+						Headline 5<a class="symbolLink" href="#header5"> #</a>
+					</h3>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/6.jpg"
+						alt="Screenshots"
+						style="
+							width: 100%;
+							height: auto;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							cursor: pointer;
+						"
+					/>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/7.jpg"
+						alt="Screenshots"
+						style="
+							width: 100%;
+							height: auto;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							cursor: pointer;
+						"
+					/>
+					<p>
+						Duis dictum feugiat odio sed pulvinar. Nulla rhoncus vestibulum
+						libero, sit amet vulputate ex ullamcorper sit amet. Aliquam egestas
+						tortor ultrices urna feugiat, eu efficitur lectus tristique. Aenean
+						tempus velit nisi, a fringilla risus fringilla eu. In tristique,
+						metus quis aliquam semper, urna erat suscipit erat, convallis
+						blandit lacus lacus a lacus. Vivamus mauris mauris, lobortis at
+						placerat sed, eleifend id metus. Quisque tortor velit, consectetur
+						non laoreet semper, pharetra eu massa. Aenean ultrices tempus dui,
+						ac luctus tortor fringilla vel. Morbi facilisis pretium sem nec
+						hendrerit. Aenean at urna odio. In eu lacinia nisl, in varius risus.
+					</p>
+
+					<h3 id="header6">
+						Headline 6<a class="symbolLink" href="#header6"> #</a>
+					</h3>
+					<img
+						class="img"
+						id="myImage"
+						src="image/screenshots/5.jpg"
+						alt="Screenshots"
+						style="
+							width: 100%;
+							height: auto;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							cursor: pointer;
+						"
+					/>
+					<p>
+						Proin imperdiet ipsum id quam iaculis, at elementum enim
+						consectetur. Ut vitae elit quis tortor dignissim fringilla. Sed
+						vitae nulla tempus, auctor lectus vitae, tempor sapien. Fusce ante
+						sem, blandit non velit tincidunt, venenatis tristique magna. Etiam
+						metus velit, fermentum ac mi eget, tincidunt egestas mauris.
+						Curabitur vehicula hendrerit est, et varius risus mattis ac. In hac
+						habitasse platea dictumst. Aenean vitae vulputate augue.
+					</p>
+
+					<hr class="separator" />
+					<div class="tags2">
+						<a class="tag tag1" href="index.html">Tag1</a>
+						<a class="tag tag4" href="index.html">Tag2</a>
+					</div>
+				</section>
+			</main>
+
+			<div class="sidebar" id="sidebar">
+				<h3>Content</h3>
+				<ul>
+					<li><a href="#header1">Headline 1</a></li>
+					<li><a href="#header2">Headline 2</a></li>
+					<li><a href="#header3">Headline 3</a></li>
+					<li><a href="#header4">Headline 4</a></li>
+					<li><a href="#header5">Headline 5</a></li>
+					<li><a href="#header6">Headline 6</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<button class="sidebar-toggle" id="toggleSidebar">☰</button>
+
+		<div id="myModal" class="modal">
+			<span class="close" id="closeModal">&times;</span>
+			<img class="modal-content" id="img01" />
+		</div>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-info">
+					<p>:Copyright:</p>
+				</div>
+				<div class="footer-links">
+					<h4>Useful links</h4>
+					<ul>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer"
+								>TG channel</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://github.com/Kisonix-Dev"
+								target="_blank"
+								rel="noopener noreferrer"
+								>GitHub</a
+							>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer">VK video</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer"
+								>VK community</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.youtube.com/@Kisonix"
+								target="_blank"
+								rel="noopener noreferrer"
+								>YouTube channel</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<h4>Author of the site : Kisonix</h4>
+				</div>
+			</div>
+		</footer>
+		<script src="scripts/togglebtn.js"></script>
+		<script src="scripts/link.js"></script>
+		<script src="scripts/sidebar.js"></script>
+		<script src="scripts/img.js"></script>
+		<script src="scripts/up.js"></script>
+		<script src="scripts/dropdown.js"></script>
+		<script src="scripts/search.js"></script>
+	</body>
+</html>

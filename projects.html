@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="image/logo.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="styles/style.css" rel="stylesheet" />
+		<title>Example site</title>
+	</head>
+	<body>
+		<header id="header">
+			<a href="index.html" class="gradient-text logo">WebPony</a>
+			<h0 class="gradient-text">Example of a website</h0>
+
+			<!--<div class="link-cards2" id="linkCards">  //Sections. 
+				<a href="#" class="active link-card card-1">
+					<h3>One</h3>
+					<p>
+						diam orci aliquet ligula, in euismod magna turpis at eros. 
+						Morbi ut euismod urna. Pellentesque ac magna nunc. Donec ut diam purus.
+					</p>
+				</a>
+				<a href="#" class="link-card card-2">
+					<h3>Two</h3>
+					<p>Integer sit amet neque ut tellus venenatis pulvinar</p>
+				</a>
+				<a href="#" class="link-card card-3">
+					<h3>Three</h3>
+					<p>Nullam a felis convallis, efficitur nisi et, imperdiet metus.</p>
+				</a>
+				<a href="#" class="link-card card-4">
+					<h3>Four</h3>
+					<p>
+						Ut gravida nec tellus sit amet egestas.
+					</p>
+				</a>
+			</div>-->
+
+			<h0 class="gradient-text"></h0>
+			<nav>
+				<a href="index.html">General</a>
+				<a href="screenshots.html">Screenshots</a>
+				<a class="active" href="projects.html">Projects</a>
+				<div class="dropdown">
+					<a class="dropbtn" onclick="toggleDropdown()"> Documentation </a>
+					<div class="dropdown-content" id="dropdownContent">
+						<a href="documentation.html">One doc</a>
+						<a href="#">Two doc</a>
+						<a href="#">Three doc</a>
+					</div>
+				</div>
+				<a href="info-author.html">About</a>
+			</nav>
+		</header>
+		<button id="scrollToTopBtn" title="Scroll up">↑</button>
+		<!--<a id="toggleCardsBtn">Show sections</a> //Sections.-->
+    <div class="container">
+      <main class="content">
+        <section class="post">
+          <div class="post-author">
+            <img src="image/ava.jpg" alt="Аватар автора" class="avatar" />
+            <a href="info-author.html" class="author-name">Kisonix</a>
+            <div class="post-date-detail">11 January 2025</div>
+          </div>
+          <a class="linkPost" href="#"><h2>Headline</h2></a>
+          <img
+            class="img"
+            id="myImage"
+            src="image/screenshots/1.jpg"
+            alt="Screenshots"
+            style="
+              width: 100%;
+              height: auto;
+              border-radius: 10px;
+              margin-bottom: 20px;
+              cursor: pointer;
+            "
+          />
+          <p>Nunc efficitur nulla eu ligula mattis, sed tristique nisl ultrices. Curabitur quis ex venenatis, 
+						cursus mi ac, malesuada velit. Nullam ullamcorper consequat tellus quis vehicula. Sed sed felis auctor, 
+						pulvinar sapien eu, consectetur dolor. Maecenas lobortis ante vel sodales mattis. Fusce vel egestas libero. 
+						Integer sit amet neque ut tellus venenatis pulvinar. Aenean aliquet turpis ipsum. Etiam viverra, nisi 
+						in accumsan vulputate, neque enim tempus odio, sed venenatis metus diam et purus. Sed consectetur metus 
+						vitae tellus tempus, volutpat auctor massa convallis. In mattis eu ipsum sit amet hendrerit. 
+						Proin felis lectus, hendrerit at imperdiet vel, pellentesque at arcu. Quisque eget posuere lacus,
+						vel convallis risus. Duis libero dolor, scelerisque eget massa vitae, gravida posuere mauris. 
+						Cras porttitor luctus neque quis dapibus. Curabitur pharetra quam risus, sit amet laoreet nisi facilisis nec.</p>
+          <p>Duis rhoncus, turpis vel tristique lobortis, nibh lacus mattis felis, nec iaculis quam nisi vitae diam. 
+						Nullam a felis convallis, efficitur nisi et, imperdiet metus.</p>
+
+          <!-- Embeddable player for video from VK -->
+          <section class="video-player">
+            <h2>Video demonstration:</h2>
+            <iframe
+              src="https://vkvideo.ru/"
+              width="670"
+              height="470"
+              allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </section>
+
+          <!-- Embeddable YouTube Player
+<section class="video-player">
+    <h2>Video demonstration:</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+</section>-->
+
+          <!-- Audio player -->
+          <!-- <section class="audio-player">
+            <h2>Audio post:</h2>
+            <audio controls id="audioPlayer">
+              <source
+                id="audioSource"
+                src="voice/voice1.mp3"
+                type="audio/mpeg"
+              />
+              Your browser does not support audio.
+            </audio>
+          </section>-->
+      </main>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+					<p>:Copyright:</p>
+				</div>
+				<div class="footer-links">
+					<h4>Useful links</h4>
+					<ul>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer"
+								>TG channel</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://github.com/Kisonix-Dev"
+								target="_blank"
+								rel="noopener noreferrer"
+								>GitHub</a
+							>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer">VK video</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener noreferrer"
+								>VK community</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.youtube.com/@Kisonix"
+								target="_blank"
+								rel="noopener noreferrer"
+								>YouTube channel</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<h4>Author of the site : Kisonix</h4>
+        </div>
+      </div>
+    </footer>
+
+    <div id="myModal" class="modal">
+      <span class="close" id="closeModal">&times;</span>
+      <img class="modal-content" id="img01" />
+    </div>
+    <script src="scripts/togglebtn.js"></script>
+    <script src="scripts/img.js"></script>
+    <script src="scripts/up.js"></script>
+    <script src="scripts/dropdown.js"></script>
+  </body>
+</html>

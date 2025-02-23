@@ -1,0 +1,33 @@
+/* ===============================================================*/
+/* Post banner */
+/* ===============================================================*/
+
+.post-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0;
+}
+.post {
+	width: 700px;
+	margin: 10px 0;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+	border-bottom: 7px solid #ffbe45;
+}
+.post:hover {
+	transform: translateY(-7px);
+}
+.post h2 a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+.post h2 a:hover {
+	color: #ffbe45;
+}
+
+/* ===============================================================*/
