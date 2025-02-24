@@ -4,7 +4,7 @@
 <p>HTML, CSS, JS.</p>
 <p>Can be used for news, blog, projects and more.</p>
 
-## Demonstration of the program
+## Demonstration of the website
 
 <p align="center"><img src=".github/img/1.png" width="70%"></p>
 <p align="center"><img src=".github/img/2.png" width="70%"></p>
