@@ -1,6 +1,5 @@
 # WebPony
 
-<<<<<<< HEAD
 <p>Website design.</p>
 <p>HTML, CSS, JS.</p>
 <p>Can be used for news, blog, projects and more.</p>
@@ -35,6 +34,3 @@
 <p>15 - Post link copy button.</p>
 <p>16 - Code copy button.</p>
 <p>17 - Colored scrolling.</p>
-=======
-WebSite design by BlackPony.
->>>>>>> 3fdf3d9abda11c6cbfdefd710a34d014be103f0b
